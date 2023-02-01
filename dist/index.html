@@ -9,38 +9,24 @@
     <h1 class="board-title">LeaderBoard</h1>
     <div class="board-container">
       <div class="scores-container">
-        <div class="scores">
-          <h3>Recent Scores</h3>
-          <button>Refresh</button>
+        <div>
+            <div class="recent-scores">
+                <h3>Recent  Scores</h3>
+                <button class="refresh">Refresh</button>
+            </div>
+            <ul class="scores-list">
+                <li class="score">
+                <span class="name">Name: </span>
+                <span class="score">Score: </span>
+                </li>
+            </ul>
         </div>
-        <table>
-          <tr>
-            <td>Name</td>
-            <td>Score</td>
-          </tr>
-          <tr>
-            <td>Name</td>
-            <td>Score</td>
-          </tr>
-          <tr>
-            <td>Name</td>
-            <td>Score</td>
-          </tr>
-          <tr>
-            <td>Name</td>
-            <td>Score</td>
-          </tr>
-          <tr>
-            <td>Name</td>
-            <td>Score</td>
-          </tr>
-        </table>
       </div>
       <div class="data-input">
         <h3>Add Your Score</h3>
         <form action="">
-          <input type="text" placeholder="Your name" id="name" />
-          <input type="text" placeholder="Your score" id="score" />
+          <input type="text" placeholder="Your name" id="name" required/>
+          <input type="number" placeholder="Your score" id="score" required/>
           <button type="submit">Submit</button>
         </form>
       </div>
