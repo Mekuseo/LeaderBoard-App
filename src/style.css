@@ -90,7 +90,7 @@ button[type="submit"] {
   border-radius: 5px;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 button[type="submit"]:hover {
