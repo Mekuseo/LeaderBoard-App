@@ -49,30 +49,12 @@ const getScores = async () => {
   gameScore.value = '';
 };
 
-// Saves a score for the current game
-// const saveScore = async (name, score) => {
-//   await fetch(
-//     `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`,
-//     {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-//       body: JSON.stringify({
-//         user: name,
-//         score,
-//       }),
-//     },
-//   );
-// };
-
 refreshBtn.addEventListener('click',
   getScores);
 
 submitBtn.addEventListener('click', async (event) => {
   event.preventDefault();
   getScores();
-  // window.location.reload();
 });
 
 createGame();
