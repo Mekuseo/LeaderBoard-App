@@ -35,7 +35,6 @@ const getScores = async () => {
   const scores = await response.json();
   const strScores = JSON.stringify(scores.result);
   const parseScores = JSON.parse(strScores);
-  console.log(scores);
 
   scoresList.innerHTML = '';
   parseScores.forEach((score) => {
